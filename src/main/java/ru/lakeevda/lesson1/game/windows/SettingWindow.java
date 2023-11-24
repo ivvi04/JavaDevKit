@@ -1,4 +1,4 @@
-package ru.lakeevda.lesson1.game;
+package ru.lakeevda.lesson1.game.windows;
 
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
