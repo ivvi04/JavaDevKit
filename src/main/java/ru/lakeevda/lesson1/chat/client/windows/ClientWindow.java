@@ -28,7 +28,7 @@ public class ClientWindow extends JFrame implements IClient {
     JTextField txtFieldMessage = new JTextField();
     JTextArea areaMessage = new JTextArea();
     JPanel panLogin = new JPanel(new GridLayout(4, 2));
-    JPanel panMessages = new JPanel(new GridLayout(1, 1));
+    JScrollPane panMessages = new JScrollPane();
     JPanel panClient = new JPanel(new GridLayout(2, 1));
     private Client client;
 
@@ -62,8 +62,11 @@ public class ClientWindow extends JFrame implements IClient {
         add(panLogin, BorderLayout.NORTH);
 
         areaMessage.setEditable(false);
-        panMessages.add(areaMessage);
-        add(panMessages);
+        areaMessage.setLineWrap(true);
+        panMessages.setViewportView(areaMessage);
+        panMessages.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+        panMessages.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+        add(panMessages, BorderLayout.CENTER);
 
         panClient.add(txtFieldMessage);
         panClient.add(btnSend);
@@ -120,7 +123,7 @@ public class ClientWindow extends JFrame implements IClient {
         String message = LocalDateTime.now().format(
                 DateTimeFormatter.ofPattern("yy/MM/dd HH:mm:ss")) + " " +
                 txtFieldLogin.getText() + ": " +
-                txtFieldMessage.getText() + "\n";
+                txtFieldMessage.getText();
         client.sendMessage(message);
         txtFieldMessage.setText("");
     }

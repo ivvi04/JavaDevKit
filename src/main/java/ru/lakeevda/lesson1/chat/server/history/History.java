@@ -11,7 +11,7 @@ public class History implements Repository<String> {
     @Override
     public void writeMessages(String message) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(LOG_FILE, true))) {
-            writer.write(message);
+            writer.write(message + "\n");
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -22,29 +22,29 @@ public class Server {
 
     public void start(){
         if (isWork){
-            showMessage("Сервер уже запущен.");
+            showMessage("Сервер уже запущен");
         } else {
             isWork = true;
-            showMessage("Сервер запущен.");
+            showMessage("Сервер запущен");
         }
     }
 
     public void stop(){
         if (!isWork){
-            showMessage("Сервер уже остановлен.");
+            showMessage("Сервер уже остановлен");
         } else {
             isWork = false;
-            for(Client client : clientList){
-                disconnectUser(client);
+            while (!clientList.isEmpty()){
+                disconnectUser(clientList.get(0));
             }
-            showMessage("Сервер остановлен.");
+            showMessage("Сервер остановлен");
         }
     }
 
     public boolean connectUser(Client client){
         if (!isWork) return false;
         clientList.add(client);
-        showMessage(client.getLogin() + " подключился к беседе.");
+        showMessage(client.getLogin() + " подключился к беседе");
         return true;
     }
 
@@ -53,7 +53,7 @@ public class Server {
             clientList.remove(client);
             if (client != null) {
                 client.disconnectFromServer();
-                showMessage(client.getLogin() + " отключился от беседы.");
+                showMessage(client.getLogin() + " отключился от беседы");
             }
         }
     }
@@ -72,10 +72,7 @@ public class Server {
     }
 
     private void answerAll(String message){
-        for (Client client: clientList){
-            System.out.println(client);
-            client.answerFromServer(message);
-        }
+        clientList.forEach(client -> client.answerFromServer(message));
     }
 
     private void showMessage(String message){

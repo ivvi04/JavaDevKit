@@ -22,15 +22,15 @@ public class Client {
         this.password = password;
         this.ip = ip;
         if (server.connectUser(this)) {
-            showMessage("Вы успешно подключились!\n");
+            showMessage("Вы подключены к серверу");
             connected = true;
-            String log = server.getHistory();
-            if (log != null) {
-                showMessage(log);
+            String messages = server.getHistory();
+            if (messages != null && !messages.equals("")) {
+                showMessage(messages);
             }
             return true;
         } else {
-            showMessage("Подключение не удалось");
+            showMessage("Вы не подключены к серверу");
             return false;
         }
     }
@@ -40,7 +40,7 @@ public class Client {
             connected = false;
             client.disconnectFromServer();
             server.disconnectUser(this);
-            showMessage("Вы отключены от сервера!");
+            showMessage("Вы отключены от сервера");
         }
     }
 

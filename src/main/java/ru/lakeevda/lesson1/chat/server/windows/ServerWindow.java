@@ -59,6 +59,7 @@ public class ServerWindow extends JFrame implements IServer {
             }
         });
         areaLog = new JTextArea();
+        areaLog.setEditable(false);
         panMessages.add(areaLog, BorderLayout.NORTH);
         add(panMessages);
         panButton.add(btnStart);
