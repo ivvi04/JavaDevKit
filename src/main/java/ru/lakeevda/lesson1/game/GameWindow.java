@@ -1,4 +1,4 @@
-package ru.lakeevda.lesson1.homework.game;
+package ru.lakeevda.lesson1.game;
 
 import javax.swing.*;
 import java.awt.*;

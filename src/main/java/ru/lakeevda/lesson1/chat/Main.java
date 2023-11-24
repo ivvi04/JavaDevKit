@@ -1,8 +1,8 @@
-package ru.lakeevda.lesson1.homework.chat;
+package ru.lakeevda.lesson1.chat;
 
 
-import ru.lakeevda.lesson1.homework.chat.client.windows.ClientWindow;
-import ru.lakeevda.lesson1.homework.chat.server.windows.ServerWindow;
+import ru.lakeevda.lesson1.chat.client.windows.ClientWindow;
+import ru.lakeevda.lesson1.chat.server.windows.ServerWindow;
 
 /**
  * Создать простейшее окно управления сервером (по сути, любым), содержащее две кнопки

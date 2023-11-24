@@ -1,8 +1,8 @@
-package ru.lakeevda.lesson1.homework.chat.client.classes;
+package ru.lakeevda.lesson1.chat.client.classes;
 
 
-import ru.lakeevda.lesson1.homework.chat.client.interfaces.IClient;
-import ru.lakeevda.lesson1.homework.chat.server.classes.Server;
+import ru.lakeevda.lesson1.chat.client.interfaces.IClient;
+import ru.lakeevda.lesson1.chat.server.classes.Server;
 
 public class Client {
     private boolean connected;

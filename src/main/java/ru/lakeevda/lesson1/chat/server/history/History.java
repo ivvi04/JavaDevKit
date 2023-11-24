@@ -1,6 +1,6 @@
-package ru.lakeevda.lesson1.homework.chat.server.history;
+package ru.lakeevda.lesson1.chat.server.history;
 
-import ru.lakeevda.lesson1.homework.chat.server.repository.Repository;
+import ru.lakeevda.lesson1.chat.server.repository.Repository;
 
 import java.io.*;
 

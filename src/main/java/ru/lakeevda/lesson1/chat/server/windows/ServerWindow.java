@@ -1,8 +1,8 @@
-package ru.lakeevda.lesson1.homework.chat.server.windows;
+package ru.lakeevda.lesson1.chat.server.windows;
 
-import ru.lakeevda.lesson1.homework.chat.server.classes.Server;
-import ru.lakeevda.lesson1.homework.chat.server.history.History;
-import ru.lakeevda.lesson1.homework.chat.server.interfaces.IServer;
+import ru.lakeevda.lesson1.chat.server.classes.Server;
+import ru.lakeevda.lesson1.chat.server.history.History;
+import ru.lakeevda.lesson1.chat.server.interfaces.IServer;
 
 import javax.swing.*;
 import java.awt.*;

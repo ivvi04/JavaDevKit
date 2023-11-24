@@ -1,13 +1,9 @@
-package ru.lakeevda.lesson1.homework.chat.server.classes;
+package ru.lakeevda.lesson1.chat.server.classes;
 
-import ru.lakeevda.lesson1.homework.chat.client.classes.Client;
-import ru.lakeevda.lesson1.homework.chat.server.interfaces.IServer;
-import ru.lakeevda.lesson1.homework.chat.server.repository.Repository;
+import ru.lakeevda.lesson1.chat.client.classes.Client;
+import ru.lakeevda.lesson1.chat.server.interfaces.IServer;
+import ru.lakeevda.lesson1.chat.server.repository.Repository;
 
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
 

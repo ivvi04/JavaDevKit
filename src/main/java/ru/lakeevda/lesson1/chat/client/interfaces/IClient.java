@@ -1,4 +1,4 @@
-package ru.lakeevda.lesson1.homework.chat.client.interfaces;
+package ru.lakeevda.lesson1.chat.client.interfaces;
 
 public interface IClient {
     void showMessage(String message);
