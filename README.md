@@ -13,7 +13,7 @@
 
 ## Урок 2. Программные интерфейсы
 
-**[Задание](https://github.com/ivvi04/JavaDevKit/tree/master/src/main/java/ru/lakeevda/lesson1)**
+**[Задание](https://github.com/ivvi04/JavaDevKit/tree/master/src/main/java/ru/lakeevda/lesson2)**
 1. Выполнить все задания семинара, если они не были решены, без ограничений по времени;
 2. Дописать третье задание таким образом, чтобы в идентификатор типа Developer записывался объект Frontender, 
 и далее вызывался метод developGUI(), не изменяя существующие интерфейсы, только код основного класса.
