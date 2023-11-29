@@ -45,7 +45,6 @@ public class MainWindow extends JFrame implements CanvasRepaintListener {
         setVisible(true);
     }
 
-//    @Override
     public void onDrawFrame(MainCanvas mainCanvas, Graphics graphics, float deltaTime) {
         update(mainCanvas, deltaTime);
         render(mainCanvas, graphics);

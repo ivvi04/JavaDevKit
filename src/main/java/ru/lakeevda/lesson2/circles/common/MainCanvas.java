@@ -8,7 +8,6 @@ public class MainCanvas extends JPanel {
     private long lastFrameTime;
 
     public MainCanvas(CanvasRepaintListener controller) {
-        //setBackground(Color.BLUE);
         this.controller = controller;
         lastFrameTime = System.nanoTime();
     }
