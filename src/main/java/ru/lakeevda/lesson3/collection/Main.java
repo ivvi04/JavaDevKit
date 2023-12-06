@@ -18,7 +18,8 @@ public class Main {
         System.out.print("Коллекция после заполнения: ");
         System.out.println(collection.toString());
 
-        System.out.print("\nУдаляем элементы из коллекции: ");
+        System.out.println();
+        System.out.print("Удаляем элементы из коллекции: ");
         for (int i = 0; i < 5; ++i) {
             Integer item = random.nextInt(30);
             collection.removeAll(item);

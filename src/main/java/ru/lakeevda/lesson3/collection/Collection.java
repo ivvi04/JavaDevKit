@@ -108,7 +108,8 @@ public class Collection<E> implements Iterable<E> {
 
     @Override
     public String toString() {
-        return Arrays.stream(data).limit(count).map(Objects::toString).collect(Collectors.joining(", ", "[", "]"));
+        return Arrays.stream(data).limit(count).map(Objects::toString)
+                .collect(Collectors.joining(", ", "[", "]"));
     }
 
     @Override

@@ -19,7 +19,7 @@ public class PairClass<U, V> {
 
     @Override
     public String toString() {
-        return String.format("PairClass{first=%s, second=%s}",
+        return String.format("PairClass[first=%s, second=%s]",
                 first,
                 second);
     }
