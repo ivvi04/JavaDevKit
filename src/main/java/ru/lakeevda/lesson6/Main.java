@@ -30,7 +30,7 @@ public class Main {
         for (Map.Entry<Integer, Boolean> entry : resultSecondPlayer.entrySet()) {
             if (entry.getValue()) countWin++;
         }
-        System.out.println("Игрок, изменяющего свой выбор. Побед: " + countWin);
+        System.out.println("Игрок, меняющий свой выбор. Побед: " + countWin);
     }
 
     private static void playerSelections(int round) {
